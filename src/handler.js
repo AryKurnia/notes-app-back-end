@@ -74,7 +74,7 @@ const editNoteBayIdAndler = (request, h) => {
 
   if (index !== -1) {
     notes[index] = {
-      ...index[index],
+      ...notes[index],
       title,
       tags,
       body,
