@@ -42,7 +42,7 @@ const getAllNotesHandler = () => ({
   },
 });
 
-const getNoteBayIdAndler = (request, h) => {
+const getNoteBayIdHandler = (request, h) => {
   const { id } = request.params;
 
   const note = notes.filter((n) => n.id === id)[0];
@@ -64,7 +64,7 @@ const getNoteBayIdAndler = (request, h) => {
   return response;
 };
 
-const editNoteBayIdAndler = (request, h) => {
+const editNoteBayIdHandler = (request, h) => {
   const { id } = request.params;
 
   const { title, tags, body } = request.payload;
@@ -123,7 +123,7 @@ const deleteNoteByIdHandler = (request, h) => {
 module.exports = {
   addNoteHandler,
   getAllNotesHandler,
-  getNoteBayIdAndler,
-  editNoteBayIdAndler,
+  getNoteBayIdHandler,
+  editNoteBayIdHandler,
   deleteNoteByIdHandler,
 };
