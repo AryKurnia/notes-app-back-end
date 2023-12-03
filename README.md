@@ -2,6 +2,7 @@
 
 notes-app-back-end adalah RESTful API untuk aplikasi catatan sederhana. Di mana aplikasi tersebut berfungsi untuk menyimpan (create), melihat (read), mengubah (update),
 dan menghapus (delete) catatan, yang dimana fungsi ini disebut CRUD.
+Perlu anda ketahui, menyimpan disini hanya bersifat apabila server berjalan, karna lilai dan objecnya disimpan dalam variabel saja, tidak menggunakan database.
 ini hanya sekedar RESTful API sederhana saja tampa adanya tampilan Front-End.
 
 ## Fitur
